@@ -1,0 +1,15 @@
+<tipo> *<nome variabile>;   definizione di variabile
+    
+char* p,q;                  p = puntatore a char, q = char 
+
+&<nome variabile>           ritorna l'indirizzo di <nome variabile>
+
+Esempio programma
+
+int main(void){
+    char x = 3;
+    char *p;
+
+    p = &x;
+    return 0;
+}
