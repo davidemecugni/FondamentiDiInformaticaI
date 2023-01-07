@@ -6,25 +6,24 @@ extern struct image* read_images(const char* filename, size_t* n) {
 		return NULL;
 	}
 	*n = 0;
-	struct image** res = calloc(1, sizeof(struct image*));
+	struct image* res = calloc(1, sizeof(struct image));
 	int scanfRes = 0;
 	while (feof(f) != 1) {
-		res[*n] = calloc(1, sizeof(struct image));
-		scanfRes = fscanf(f,"%255[^:]s", &res[*n]->name);
+		scanfRes = fscanf(f,"%255[^:]s", res[*n].name);
 		if (scanfRes != 1) {
 			break;
 		}
 		if (getc(f) != ':') {
 			break;
 		}
-		scanfRes = fscanf(f, "%zu", &res[*n]->height);
+		scanfRes = fscanf(f, "%zu", &res[*n].height);
 		if (scanfRes != 1) {
 			break;
 		}
 		if (getc(f) != ':') {
 			break;
 		}
-		scanfRes = fscanf(f, "%zu", &res[*n]->width);
+		scanfRes = fscanf(f, "%zu", &res[*n].width);
 		if (scanfRes != 1) {
 			break;
 		}
@@ -32,10 +31,10 @@ extern struct image* read_images(const char* filename, size_t* n) {
 			break;
 		}
 		*n += 1;
-		res = realloc(res, *n * sizeof(struct image));
+		res = realloc(res, (*n +1) * sizeof(struct image));
 	}
-	free(res[*n]);
 	if (*n == 0) {
+		free(res);
 		return NULL;
 	}
 	return res;
