@@ -1,0 +1,2 @@
+﻿  rectangle.c
+C:\Users\winbu\Desktop\EsameDiLaboratorio43\Es3\rectangle.c(12,14): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data

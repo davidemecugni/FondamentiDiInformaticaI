@@ -1,0 +1,3 @@
+﻿  morse.c
+C:\Users\winbu\Desktop\EsameDiLaboratorio43\Es2\morse.c(97,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Es2.vcxproj -> C:\Users\winbu\Desktop\EsameDiLaboratorio43\Es2\x64\Debug\Es2.exe
