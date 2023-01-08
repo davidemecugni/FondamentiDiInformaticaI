@@ -1,0 +1,16 @@
+#include "matrix.h"
+struct matrix* matrix_flip_h(const struct matrix* m) {
+	if (m == NULL) {
+		return NULL;
+	}
+	struct matrix* res = calloc(sizeof(struct matrix),1);
+	res->rows = m->rows;
+	res->cols = m->cols;
+	res->data = calloc(res->rows * res->cols, sizeof(double));
+	for (size_t row = 0; row < res->rows; row++) {
+		for (size_t col = 0; col < res->cols; col++) {
+			res->data[(res->cols -col - 1) + row * res->cols] = m->data[col + row * res->cols];
+		}
+	}
+	return res;
+}
