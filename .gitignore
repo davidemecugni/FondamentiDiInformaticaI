@@ -460,3 +460,6 @@ FodyWeavers.xsd
 *.css
 *.pdf
 *_files/**
+*.png
+*.download
+js
