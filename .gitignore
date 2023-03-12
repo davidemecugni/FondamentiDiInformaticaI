@@ -459,4 +459,4 @@ FodyWeavers.xsd
 *.html
 *.css
 *.pdf
-**/*_files/**
+*_files/**
