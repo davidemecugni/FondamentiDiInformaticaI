@@ -1,0 +1,17 @@
+[
+	{
+		"productId": "123",
+		"fullName": "CICCIO",
+		"price": 1
+	},
+	{
+		"productId": "456",
+		"fullName": "ALBERTO",
+		"price": 2
+	},
+	{
+		"productId": "789",
+		"fullName": "PIERO",
+		"price": 3
+	}
+]
