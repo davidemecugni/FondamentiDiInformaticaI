@@ -1,6 +1,6 @@
 # Fondamenti Di Informatica 1
 
-This repo is a collection of code made in the course "Fondamenti di Informatica" held by prof. Costantino Grana during the academic year 2022/2023. The repo includes my personal practice exams and my final exam(30L/30L).
+This repo is a collection of code made in the course "Fondamenti di Informatica" held by prof. Costantino Grana during the academic year 2022/2023. The repo includes my personal practice exams and my final exam(30 cum laude/30).
 
 ## Usage
 
